@@ -9,3 +9,15 @@
 /home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/refint/Domain.dll
 /home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.pdb
 /home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/ref/Domain.dll
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/bin/Debug/net8.0/Domain.dll
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/bin/Debug/net8.0/Domain.pdb
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.sourcelink.json
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.dll
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/Domain.pdb
+/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/obj/Debug/net8.0/ref/Domain.dll

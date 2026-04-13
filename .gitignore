@@ -1,0 +1,75 @@
+
+# =========================
+# Build results
+# =========================
+bin/
+obj/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# IDEs
+# =========================
+.vs/
+.vscode/
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# .NET Core / EF Core
+# =========================
+Migrations/*Designer.cs
+Migrations/*Snapshot.cs
+
+# EF Core migrations (opcional si quieres versionarlas, si NO, ignóralas)
+# Migrations/
+
+# =========================
+# Publish output
+# =========================
+publish/
+wwwroot/
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# Secrets
+# =========================
+appsettings.Development.json
+appsettings.*.local.json
+secrets.json
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+.nuget/
+
+# =========================
+# Coverage / test results
+# =========================
+TestResults/
+coverage/

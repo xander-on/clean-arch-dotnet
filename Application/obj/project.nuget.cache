@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u8s2jKQ6w74=",
+  "dgSpecHash": "YT3H/XZPmdbGkbHLGQ/13/qdvZ98qKFlAN39Hig2avcQNiLWfyZlaF+O05oTnYhFZomlRmuUET37UobrsAt9CA==",
   "success": true,
-  "projectFilePath": "/home/xander/dev/dotnet/CleanArchDemo/Application/Application.csproj",
-  "expectedPackageFiles": [
-    "/home/xander/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
-    "/home/xander/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "/home/alexander/dev/dotnet/clean-arch-dotnet/Application/Application.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

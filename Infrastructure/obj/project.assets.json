@@ -4141,19 +4141,19 @@
     ]
   },
   "packageFolders": {
-    "/home/xander/.nuget/packages/": {}
+    "/home/alexander/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/xander/dev/dotnet/CleanArchDemo/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/home/alexander/dev/dotnet/clean-arch-dotnet/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/home/xander/dev/dotnet/CleanArchDemo/Infrastructure/Infrastructure.csproj",
-      "packagesPath": "/home/xander/.nuget/packages/",
-      "outputPath": "/home/xander/dev/dotnet/CleanArchDemo/Infrastructure/obj/",
+      "projectPath": "/home/alexander/dev/dotnet/clean-arch-dotnet/Infrastructure/Infrastructure.csproj",
+      "packagesPath": "/home/alexander/.nuget/packages/",
+      "outputPath": "/home/alexander/dev/dotnet/clean-arch-dotnet/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/xander/.nuget/NuGet/NuGet.Config"
+        "/home/alexander/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4165,11 +4165,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/xander/dev/dotnet/CleanArchDemo/Application/Application.csproj": {
-              "projectPath": "/home/xander/dev/dotnet/CleanArchDemo/Application/Application.csproj"
+            "/home/alexander/dev/dotnet/clean-arch-dotnet/Application/Application.csproj": {
+              "projectPath": "/home/alexander/dev/dotnet/clean-arch-dotnet/Application/Application.csproj"
             },
-            "/home/xander/dev/dotnet/CleanArchDemo/Domain/Domain.csproj": {
-              "projectPath": "/home/xander/dev/dotnet/CleanArchDemo/Domain/Domain.csproj"
+            "/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/Domain.csproj": {
+              "projectPath": "/home/alexander/dev/dotnet/clean-arch-dotnet/Domain/Domain.csproj"
             }
           }
         }
@@ -4178,11 +4178,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4213,22 +4208,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.25, 8.0.25]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.25, 8.0.25]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.419/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.125/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,0 +1,11 @@
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.AssemblyInfoInputs.cache
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.AssemblyInfo.cs
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.csproj.CoreCompileInputs.cache
+/home/xander/dev/dotnet/CleanArchDemo/Domain/bin/Debug/net8.0/Domain.deps.json
+/home/xander/dev/dotnet/CleanArchDemo/Domain/bin/Debug/net8.0/Domain.dll
+/home/xander/dev/dotnet/CleanArchDemo/Domain/bin/Debug/net8.0/Domain.pdb
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.dll
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/refint/Domain.dll
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/Domain.pdb
+/home/xander/dev/dotnet/CleanArchDemo/Domain/obj/Debug/net8.0/ref/Domain.dll

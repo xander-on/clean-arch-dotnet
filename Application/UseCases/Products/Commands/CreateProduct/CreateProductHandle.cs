@@ -17,7 +17,7 @@ public class CreateProductUseCase(IProductRepository productRepository)
     {
         var existingProduct = await productRepository.Exists(command.Name);
         if (existingProduct )
-            throw new BusinessRuleExceptions("Product name already exists.");
+            throw new BusinessRuleException("Product name already exists.");
 
         var money = Money.Create(command.Price, command.Currency);
         var stockQuantity = StockQuantity.Create(command.StockQuantity);

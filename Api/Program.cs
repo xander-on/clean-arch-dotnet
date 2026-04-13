@@ -1,3 +1,4 @@
+using Api.Middlewares;
 using Application;
 using Infrastructure;
 
@@ -12,6 +13,8 @@ builder.Services.AddApplication();
 builder.Services.AddControllers();
 
 var app = builder.Build();
+
+app.UseHandlerException();
 
 if (app.Environment.IsDevelopment())
 {

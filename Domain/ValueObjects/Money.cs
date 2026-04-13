@@ -20,10 +20,10 @@ public class Money
     public static Money Create(decimal amount, string currency = "USD")
     {
         if(amount < 0)
-            throw new BusinessRuleExceptions("Amount cannot be negative.");
+            throw new BusinessRuleException("Amount cannot be negative.");
 
         if(string.IsNullOrEmpty(currency))
-            throw new BusinessRuleExceptions("Currency cannot be null or empty.");
+            throw new BusinessRuleException("Currency cannot be null or empty.");
 
         return new Money(amount, currency);
     }

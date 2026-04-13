@@ -5,7 +5,7 @@
 namespace Domain.Exceptions;
 
 
-public class BusinessRuleExceptions : Exception
+public class BusinessRuleException : Exception
 {
-    public BusinessRuleExceptions(string message) : base(message) { }
+    public BusinessRuleException(string message) : base(message) { }
 }

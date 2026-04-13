@@ -15,7 +15,7 @@ public class StockQuantity
     public static StockQuantity Create(int quantity)
     {
         if (quantity < 0)
-            throw new BusinessRuleExceptions("Stock quantity cannot be negative.");
+            throw new BusinessRuleException("Stock quantity cannot be negative.");
 
         return new StockQuantity(quantity);
     }

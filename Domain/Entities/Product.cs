@@ -18,10 +18,10 @@ public class Product
     public static Product Create(string name, string description, Money price, StockQuantity stockQuantity)
     {
         if (string.IsNullOrWhiteSpace(name))
-            throw new BusinessRuleExceptions("Product name cannot be null or empty.");
+            throw new BusinessRuleException("Product name cannot be null or empty.");
 
         if (name.Trim().Length > 200)
-            throw new BusinessRuleExceptions("Product name cannot exceed 200 characters.");
+            throw new BusinessRuleException("Product name cannot exceed 200 characters.");
 
         return new Product
         {

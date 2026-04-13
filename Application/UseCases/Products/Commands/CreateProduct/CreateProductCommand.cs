@@ -1,3 +1,5 @@
+using Application.Utilities.Mediator;
+
 namespace Application.Products.Commands.CreateProduct;
 
 public record CreateProductCommand(
@@ -6,4 +8,4 @@ public record CreateProductCommand(
     decimal Price,
     string Currency,
     int StockQuantity
-);
+):IRequest<Guid>;

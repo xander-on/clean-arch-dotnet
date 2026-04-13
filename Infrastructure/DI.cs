@@ -16,6 +16,7 @@ public static class DI
             options => options.UseSqlServer("name=DefaultConnection")
         );
         services.AddScoped<IProductRepository, ProductRepository>();
+        
         return services;
     }
 }

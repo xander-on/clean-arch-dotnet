@@ -3,6 +3,7 @@
 
 using Application.Contracts;
 using Application.Products.Commands.CreateProduct;
+using Application.Utilities.Mediator;
 using Domain.Entities;
 using Domain.Exceptions;
 using Domain.ValueObjects;
@@ -10,6 +11,7 @@ using Domain.ValueObjects;
 namespace Application.UseCases.Products.Commands.CreateProduct;
 
 public class CreateProductUseCase(IProductRepository productRepository)
+    : IRequestHandler<CreateProductCommand, Guid>
 {
     public async Task<Guid> Handle(CreateProductCommand command)
     {

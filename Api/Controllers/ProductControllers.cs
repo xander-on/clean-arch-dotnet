@@ -5,6 +5,7 @@ using Api.Dtos;
 using Application.Products.Commands.CreateProduct;
 using Application.UseCases.Products.Commands.StockAdjustment;
 using Application.UseCases.Products.Commands.UpdateProduct;
+using Application.UseCases.Products.Queries.GetProductById;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -13,6 +14,18 @@ namespace Api.Controllers;
 [Route("api/products")]
 public class ProductsController(IMediator mediator): ControllerBase
 {
+
+    [HttpGet("{id}")]
+    public async Task<ActionResult<ProductDetailDto>> Get(
+        [FromRoute] Guid id
+    )
+    {
+        var query = new GetProductByIdQuery(id);
+        return await mediator.Send(query);
+    }
+
+    
+
     [HttpPost]
     public async Task<ActionResult<Guid>> Create(
         [FromBody] CreateProductDto dto
@@ -27,7 +40,7 @@ public class ProductsController(IMediator mediator): ControllerBase
         );
 
         var id = await mediator.Send(command);
-        return id;
+        return CreatedAtAction(nameof(Get), new { id }, id);
     }
 
 

@@ -2,6 +2,8 @@
 
 using Application.Products.Commands.CreateProduct;
 using Application.UseCases.Products.Commands.CreateProduct;
+using Application.UseCases.Products.Commands.StockAdjustment;
+using Application.UseCases.Products.Commands.UpdateProduct;
 using Application.Utilities.Mediator;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -13,6 +15,8 @@ public static class DI
     {
         services.AddTransient<IMediator, SimpleMediator>();
         services.AddScoped<IRequestHandler<CreateProductCommand, Guid>, CreateProductUseCase>();
+        services.AddScoped<IRequestHandler<UpdateProductCommand>, UpdateProductHandle>();
+        services.AddScoped<IRequestHandler<StockAdjustmentCommand>, StockAdjustmentHandle>();
         return services;
     }
 }

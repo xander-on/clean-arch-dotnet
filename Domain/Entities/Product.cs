@@ -17,11 +17,7 @@ public class Product
 
     public static Product Create(string name, string description, Money price, StockQuantity stockQuantity)
     {
-        if (string.IsNullOrWhiteSpace(name))
-            throw new BusinessRuleException("Product name cannot be null or empty.");
-
-        if (name.Trim().Length > 200)
-            throw new BusinessRuleException("Product name cannot exceed 200 characters.");
+        NameValidator(name);
 
         return new Product
         {
@@ -30,5 +26,39 @@ public class Product
             Price = price,
             StockQuantity = stockQuantity
         };
+    }
+
+
+
+    public void Update(string name, string? description, Money price, bool isActive)
+    {
+        NameValidator(name);
+        
+        Name = name;
+        Description = description ?? Description;
+        Price = price;
+        Activo = isActive;
+    }
+
+
+    private static void NameValidator(string name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+            throw new BusinessRuleException("Product name cannot be null or empty.");
+
+        if (name.Trim().Length > 200)
+            throw new BusinessRuleException("Product name cannot exceed 200 characters.");
+    }
+
+
+
+    public void StockAdjustment(int delta)
+    {
+        var newValue = StockQuantity.Quantity + delta;
+
+        if (newValue < 0)
+            throw new BusinessRuleException("Stock quantity cannot be negative.");
+
+        StockQuantity = StockQuantity.Create(newValue);
     }
 }

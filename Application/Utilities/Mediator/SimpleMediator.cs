@@ -23,4 +23,22 @@ public class SimpleMediator(IServiceProvider sp) : IMediator
         // return await (Task<TResponse>)method.Invoke(useCase, new object[] { request });
         return await (Task<TResponse>)result;
     }
+
+
+
+    public async Task Send(IRequest request)
+    {
+        var handlerType = typeof(IRequestHandler<>)
+            .MakeGenericType(request.GetType());
+
+        var useCase = sp.GetRequiredService(handlerType);
+
+        var method = handlerType.GetMethod("Handle")
+            ?? throw new InvalidOperationException("Handle method not found");
+            
+        var result = method.Invoke(useCase, new object[] { request })
+            ?? throw new InvalidOperationException("Handler returned null");
+
+        await (Task)result;
+    }
 }

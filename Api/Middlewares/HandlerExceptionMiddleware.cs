@@ -3,6 +3,7 @@
 
 using System.Net;
 using System.Text.Json;
+using Application.Exceptions;
 using Domain.Exceptions;
 
 namespace Api.Middlewares;
@@ -39,6 +40,10 @@ public class HandlerExceptionMiddleware
             case BusinessRuleException businessRuleException:
                 httpStatusCode = HttpStatusCode.BadRequest;
                 result = JsonSerializer.Serialize(businessRuleException.Message);
+                break;
+
+            case NotFoundException:
+                httpStatusCode = HttpStatusCode.NotFound;
                 break;
         }
 

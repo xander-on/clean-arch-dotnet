@@ -6,6 +6,7 @@ using Application.Products.Commands.CreateProduct;
 using Application.UseCases.Products.Commands.StockAdjustment;
 using Application.UseCases.Products.Commands.UpdateProduct;
 using Application.UseCases.Products.Queries.GetProductById;
+using Application.UseCases.Products.Queries.SearchProducts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
@@ -21,6 +22,17 @@ public class ProductsController(IMediator mediator): ControllerBase
     )
     {
         var query = new GetProductByIdQuery(id);
+        return await mediator.Send(query);
+    }
+
+
+    [HttpGet("search")]
+    public async Task<ActionResult<List<SearchProductsDto>>> Search(
+        [FromQuery] string? name,
+        [FromQuery] bool? isActive
+    )
+    {
+        var query = new SearchProductsQuery(name, isActive);
         return await mediator.Send(query);
     }
 

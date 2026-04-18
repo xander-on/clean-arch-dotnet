@@ -5,6 +5,7 @@ using Application.UseCases.Products.Commands.CreateProduct;
 using Application.UseCases.Products.Commands.StockAdjustment;
 using Application.UseCases.Products.Commands.UpdateProduct;
 using Application.UseCases.Products.Queries.GetProductById;
+using Application.UseCases.Products.Queries.SearchProducts;
 using Application.Utilities.Mediator;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -19,7 +20,7 @@ public static class DI
         services.AddScoped<IRequestHandler<UpdateProductCommand>, UpdateProductHandle>();
         services.AddScoped<IRequestHandler<StockAdjustmentCommand>, StockAdjustmentHandle>();
         services.AddScoped<IRequestHandler<GetProductByIdQuery, ProductDetailDto>, GetProductByIdHandle>();
-        
+        services.AddScoped<IRequestHandler<SearchProductsQuery, List<SearchProductsDto>>, SearchProductsHandle>();
         return services;
     }
 }

@@ -28,4 +28,18 @@ public class ProductRepository(ApplicationDbContext context) : IProductRepositor
         context.Update(product);
         await context.SaveChangesAsync();
     }
+
+
+    public async Task<List<Product>> Search(string? name, bool? isActive)
+    {
+        var query = context.Products.AsQueryable();
+
+        if(name is not null)
+            query = query.Where(x => x.Name.Contains(name));
+
+        if(isActive is not null)
+            query = query.Where(x => x.Activo == isActive);
+
+        return await query.ToListAsync();
+    }
 }
